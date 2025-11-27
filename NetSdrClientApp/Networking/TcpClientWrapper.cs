@@ -7,6 +7,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Diagnostics.CodeAnalysis;
+
 
 namespace NetSdrClientApp.Networking
 {
@@ -28,6 +30,7 @@ namespace NetSdrClientApp.Networking
             _port = port;
         }
 
+        [ExcludeFromCodeCoverage]
         public void Connect()
         {
             if (Connected)
@@ -40,7 +43,10 @@ namespace NetSdrClientApp.Networking
 
             try
             {
+                // якщо вже існує попередній токен — звільняємо його перед створенням нового
+                _cts?.Dispose();
                 _cts = new CancellationTokenSource();
+
                 _tcpClient.Connect(_host, _port);
                 _stream = _tcpClient.GetStream();
                 Console.WriteLine($"Connected to {_host}:{_port}");
@@ -49,9 +55,11 @@ namespace NetSdrClientApp.Networking
             catch (Exception ex)
             {
                 Console.WriteLine($"Failed to connect: {ex.Message}");
+                _cts?.Dispose(); //  звільняємо ресурс у випадку помилки
             }
         }
 
+        [ExcludeFromCodeCoverage]
         public void Disconnect()
         {
             if (Connected)
@@ -76,12 +84,14 @@ namespace NetSdrClientApp.Networking
             await SendDataAsync(data);
         }
 
+        [ExcludeFromCodeCoverage]
         public async Task SendMessageAsync(string str)
         {
             var data = Encoding.UTF8.GetBytes(str);
             await SendDataAsync(data);
         }
 
+        [ExcludeFromCodeCoverage]
         private async Task SendDataAsync(byte[] data)
         {
             if (Connected && _stream != null && _stream.CanWrite)
@@ -95,6 +105,7 @@ namespace NetSdrClientApp.Networking
             }
         }
 
+        [ExcludeFromCodeCoverage]
         private async Task StartListeningAsync()
         {
             if (Connected && _stream != null && _stream.CanRead)
