@@ -1,13 +1,11 @@
-# Лабораторні з реінжинірингу (8×)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=alert_status)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=coverage)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=bugs)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=code_smells)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=vulnerabilities)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=duplicated_lines_density)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=security_rating)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=sqale_rating)](https://sonarcloud.io/summary/organizations/mishag21key/projects?project=MishaG21_RPZLabsGoncharuk)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MishaG21_RPZLabsGoncharuk&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MishaG21_RPZLabsGoncharuk)
 
 Цей репозиторій використовується для курсу **реінжиніринг ПЗ**. 
 Мета — провести комплексний реінжиніринг спадкового коду NetSdrClient, включаючи рефакторинг архітектури, покращення якості коду, впровадження сучасних практик розробки та автоматизацію процесів контролю якості через CI/CD пайплайни.
